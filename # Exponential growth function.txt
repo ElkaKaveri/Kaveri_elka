@@ -1,0 +1,25 @@
+# Exponential growth function
+def exponential_growth(initial_population, growth_rate, time):
+    return initial_population * (1 + growth_rate) ** time
+
+# Exponential decay function
+def exponential_decay(initial_quantity, decay_rate, time):
+    return initial_quantity * (1 - decay_rate) ** time
+
+# Parameters
+initial_population = 1000
+growth_rate = 0.05  # 5% growth rate
+decay_rate = 0.03   # 3% decay rate
+time_values = [i for i in range(11)]  # Time values from 0 to 10
+
+# Calculate population growth
+growth_values = [exponential_growth(initial_population, growth_rate, t) for t in time_values]
+
+# Calculate quantity decay
+initial_quantity = 500
+decay_values = [exponential_decay(initial_quantity, decay_rate, t) for t in time_values]
+
+# Print the results
+print("Time\tPopulation Growth\tQuantity Decay")
+for t, growth, decay in zip(time_values, growth_values, decay_values):
+    print(f"{t}\t{growth:.2f}\t\t\t{decay:.2f}")
