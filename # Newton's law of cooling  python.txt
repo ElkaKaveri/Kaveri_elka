@@ -1,0 +1,28 @@
+# Newton's law of cooling function
+def newtons_law_of_cooling(T, Ta, k):
+    return -k * (T - Ta)
+
+# Euler's method for solving ordinary differential equations
+def euler_method(func, initial_condition, t_values, Ta, k):
+    n = len(t_values)
+    T_values = [initial_condition]
+    
+    for i in range(1, n):
+        dt = t_values[i] - t_values[i-1]
+        T = T_values[-1] + dt * func(T_values[-1], Ta, k)
+        T_values.append(T)
+        
+    return T_values
+
+# Parameters
+k = 0.1  # Proportionality constant
+Ta = 20  # Ambient temperature
+initial_temp = 100  # Initial temperature
+t_values = [i for i in range(51)]  # Time values from 0 to 50
+
+# Solve Newton's law of cooling using Euler's method
+T_values = euler_method(newtons_law_of_cooling, initial_temp, t_values, Ta, k)
+
+# Print the results
+for t, T in zip(t_values, T_values):
+    print(f"Time: {t}, Temperature: {T}")
