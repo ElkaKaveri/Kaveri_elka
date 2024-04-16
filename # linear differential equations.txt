@@ -1,0 +1,31 @@
+# Define the linear ODE dy/dt = a * y + b
+def linear_ode(a, b, y0, t_span, dt):
+    t_values = [t_span[0]]
+    y_values = [y0]
+
+    t = t_span[0]
+    y = y0
+
+    while t < t_span[1]:
+        dy_dt = a * y + b
+        y += dy_dt * dt
+        t += dt
+
+        t_values.append(t)
+        y_values.append(y)
+
+    return t_values, y_values
+
+# Parameters
+a = 0.5
+b = 1
+y0 = 1
+t_span = (0, 5)
+dt = 0.1
+
+# Solve the ODE
+t_values, y_values = linear_ode(a, b, y0, t_span, dt)
+
+# Print the solution
+for t, y in zip(t_values, y_values):
+    print(f"Time: {t}, Solution: {y}")
