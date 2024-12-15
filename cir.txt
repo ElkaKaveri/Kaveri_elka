@@ -1,0 +1,6 @@
+import graphics
+win = graphics.GraphWin("my window",500,500)
+circle = graphics.Circle(graphics.Point(250,250),50)
+circle.draw(win)
+win.getMouse()
+win.close()

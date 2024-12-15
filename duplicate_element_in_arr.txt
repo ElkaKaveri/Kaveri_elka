@@ -1,0 +1,30 @@
+#include <stdio.h>
+void dup(int [], int);
+void main()
+{
+    int num,a[100],j,i;
+    printf("enter a number: ");
+    scanf("%d",&num);
+    printf("enter array elements : ");
+    for(i=0;i<num;i++)
+    scanf("%d",&a[i]);
+    dup(a,num);
+}
+  void dup(int x[],int n)
+  {
+      int i, j;
+      for(i=0;i<n;i++)
+      { 
+       for(j=i+1;j<n;j++)
+       {
+           if(x[i] == x[j])
+           {
+               printf("%d is duplicate element",x[i]);
+               
+           }
+       }
+      }
+        
+       
+      }
+  

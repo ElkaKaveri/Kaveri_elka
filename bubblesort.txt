@@ -1,0 +1,39 @@
+#include <stdio.h>
+void bubblesort(int [],int);
+void swap(int *,int*);
+void main()
+{
+    int n,a[10],i;
+    printf("enter n value :  ");
+    scanf("%d",&n);
+    printf("enter array elements: ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    bubblesort(a,n);
+    for(i=0;i<n;i++)
+    printf("%d ", a[i]);
+}
+void bubblesort(int x[],int n)
+{ int i,j;
+    for(i=0;i<n-i;i++)
+    {
+        for(j=i+1;j<n-i;j++)
+        {
+          if(x[i] > x[j])  
+          swap(&x[j],&x[j+1]);
+        }
+    }
+}
+void swap(int *a,int *b) 
+{
+    int *t;
+    *t = *a;
+    *a = *b;
+    *b = *t;
+}
+     
+ 
+
+
