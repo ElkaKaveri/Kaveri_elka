@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kaveri Elka</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    header {
+      text-align: center;
+      background-color: #0077cc;
+      color: white;
+      padding: 15px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    h2 {
+      color: #0077cc;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    section {
+      margin: 20px 0;
+    }
+
+    .project {
+      background: #f1f1f1;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    a {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Kaveri Elka</h1>
+      <p>Email: kaverielka0307@gmail.com | Phone: 8885660307</p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/kaveri-elka-2a4592293" target="_blank">Profile</a> |
+        GitHub:
+        <a href="https://github.com/ElkaKaveri/Kaveri_elka" target="_blank">Profile</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Objective</h2>
+      <p>To contribute to impactful projects using my skills and grow as a developer in a collaborative environment.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>BVRIT Hyderabad College of Engineering for Women</strong></p>
+      <p>B.Tech | Expected Graduation: 2027</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>C, Java, Python, HTML, CSS, JavaScript</li>
+        <li>Communication, Teamwork</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Online Book Store</h3>
+        <p>Java-based web application to browse, search and purchase books online. Includes user registration, login, and order tracking.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
